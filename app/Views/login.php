@@ -48,7 +48,7 @@
                     </button>
                   </div>
                   <div class="float-right"><br>
-                        <a href="auth-forgot-password.html" class="text-small">
+                        <a href="<?= base_url('template') ?> /pages/auth-forgot-password.html" class="text-small">
                           Lupa Kata Sandi?
                         </a>
                       </div>
@@ -74,7 +74,7 @@
 							if ( $cek_password <> $password ) {
 								echo"<script>alert('Kata Sandi Salah')</script>";
 							} else {
-								echo"<script>document,location.href='index-isi.html'</script>";
+								echo"<script>document,location.href='user_login/index'</script>";
 							}
 
 						} else {
